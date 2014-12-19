@@ -4,7 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.FlowMaterializer
 import akka.stream.scaladsl._
 
-
+//see also https://github.com/adamw/reactmq
 object MyExample {
 
   def main(args: Array[String]) {
@@ -51,6 +51,7 @@ object MyExample {
   }
 
   def process(msg: String) = {
+    //dummy implementation
     msg + " processed!"
   }
 
